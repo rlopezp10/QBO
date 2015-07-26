@@ -1,0 +1,72 @@
+// General Typography definitions
+// Overide Bootstrap definitions
+
+// DO NOT REMOVE THIS DECLARATION
+body {
+    -webkit-font-smoothing: antialiased;
+    font-family: $font-family-primary;
+    font-weight: 400;
+    font-style: normal;
+}
+
+ul {
+  a {
+    font-family: $font-family-primary;
+    font-weight: 400;
+    font-style: italic;
+  }
+}
+
+h1 {
+    font-family: $font-family-primary;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: 0;
+    text-transform: uppercase;
+}
+
+h2 {
+  color: $brand-primary;
+	font-family: $font-family-primary;
+  font-weight: 700;
+  letter-spacing: 0;
+  font-style: normal;
+  text-transform: uppercase;
+
+
+  @media (max-width: $screen-sm-max) {
+    color: $brand-primary;
+    font-size: 1.1111111em;
+
+    &.h2-secondary {
+      color: $brand-primary;
+    }
+  }
+
+  @media (max-width: $screen-xs-max) {
+    font-size: 0.8333333em;
+  }
+
+  @media (max-width: $screen-xs-mobile) {
+    font-size: 0.5666666em;
+  }
+}
+
+h3 {
+	font-family: $font-family-primary;
+  font-weight: 700;
+  letter-spacing: 0;
+  font-style: normal;
+}
+
+h4 {
+    font-family: $font-family-primary;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: 0;
+    text-transform: uppercase;
+}
+
+a {
+  display: inline-block;
+}

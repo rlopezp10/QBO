@@ -1,0 +1,96 @@
+@mixin transition($transition...) {
+  -webkit-transition: $transition;
+  -moz-transition:    $transition;
+  -o-transition:      $transition;
+  -ms-transition:     $transition;
+  transition:         $transition;
+}
+
+/*
+==============================================
+Selection
+==============================================
+*/
+
+$prefixes: ("-moz-", "");
+@mixin selection($color, $background, $inverted: null) {
+
+  @if $inverted == 'inverted' {
+    $temp: $color;
+    $background: $temp;
+    $color: $background;
+  }
+  @each $prefix in $prefixes {
+    ::#{$prefix}selection {
+      color: $color;
+      background: $background;
+    }
+  }
+}
+
+
+$prefixes: ("-webkit-", "-moz-", "-o-", "-ms-");
+@mixin blur_animation($t : 1s) {
+  @each $pFix in $prefixes {
+    #{$pFix}transition: #{$pFix}filter $t ease;
+
+    @if $pFix == "-moz-" {
+      #{$pFix}transition: filter $t ease;
+    }
+  }
+}
+
+@mixin blur($g) {
+  -webkit-filter: blur($g);
+  -moz-filter: blur($g);
+  -o-filter: blur($g);
+  -ms-filter: blur($g);
+  filter: blur($g);
+}
+
+@mixin border-radius($f) {
+  -webkit-border-radius: $f;
+  -moz-border-radius: $f;
+  border-radius: $f;
+}
+
+@mixin rotates($deg) {
+  -moz-transform: rotate($deg);
+  -webkit-transform: rotate($deg);
+  -o-transform: rotate($deg);
+  -ms-transform: rotate($deg);
+  transform: rotate($deg);
+}
+
+@mixin underline($color: white, $border-size: 1px) {
+  border-bottom: $border-size solid $color;
+  display: inline-block;
+  // padding-left: 9px;
+  // padding-right: 9px;
+}
+
+
+@mixin vertical-align {
+  position: relative;
+  top: 50%;
+  -moz-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+@mixin translate($x, $y) {
+  -webkit-transform: translate($x, $y);
+  -moz-transform: translate($x, $y);
+  -ms-transform: translate($x, $y);
+  -o-transform: translate($x, $y);
+  transform: translate($x, $y);
+}
+
+
+@mixin opacity($opacity) {
+  opacity: $opacity;
+  $opacity-ie: $opacity * 100;
+  filter: alpha(opacity=$opacity-ie); //IE8
+}
