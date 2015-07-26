@@ -51,18 +51,14 @@ $(function() {
     $slideTall.height(winH*2);
     
     // Refresh Skrollr after resizing our sections
-    s.refresh();
+    s.refresh();  
   }
 
-  function init() {
-    isMobile = isMo();
-    if (!isMobile) {
-      var s = initPlugIn();
-      initSiteParams();
-    }
+  isMobile = isMo();
+  if (!isMobile) {
+    var s = initPlugIn();
+    initSiteParams();
   }
-
-  // init();
 
   $('#map-modal-id').on('show.bs.modal', function (event) {
     $('.section__1').find('.container-fluid').hide();
