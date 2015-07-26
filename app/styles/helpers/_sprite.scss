@@ -9,45 +9,159 @@ Icon classes can be used entirely standalone. They are named after their origina
 <img class="icon-home" />
 ```
 */
+.icon-hsolis-hover {
+  background-image: url(../images/sprite.png);
+  background-position: 0px 0px;
+  width: 157px;
+  height: 58px;
+}
+.icon-hsolis {
+  background-image: url(../images/sprite.png);
+  background-position: 0px -58px;
+  width: 157px;
+  height: 58px;
+}
 .icon-next_special {
   background-image: url(../images/sprite.png);
-  background-position: -25px -53px;
+  background-position: -200px -52px;
   width: 16px;
   height: 16px;
 }
 .icon-previous_special {
   background-image: url(../images/sprite.png);
-  background-position: -41px -53px;
+  background-position: -200px -68px;
   width: 16px;
   height: 16px;
 }
 .icon-s2-icn-geoLocation {
   background-image: url(../images/sprite.png);
-  background-position: -76px 0px;
+  background-position: -216px -80px;
   width: 29px;
   height: 38px;
 }
 .icon-s3-icn-building {
   background-image: url(../images/sprite.png);
-  background-position: 0px 0px;
+  background-position: -38px -116px;
   width: 38px;
   height: 53px;
 }
 .icon-s3-icn-vidBTN {
   background-image: url(../images/sprite.png);
-  background-position: -38px 0px;
+  background-position: -76px -116px;
   width: 38px;
   height: 44px;
 }
 .icon-s4-icn-corazon {
   background-image: url(../images/sprite.png);
-  background-position: 0px -53px;
+  background-position: -31px -204px;
   width: 25px;
   height: 22px;
 }
 .icon-s5-icn-play {
   background-image: url(../images/sprite.png);
-  background-position: -76px -38px;
+  background-position: -200px -84px;
   width: 10px;
   height: 10px;
+}
+.icon-s6-img-amd-1 {
+  background-image: url(../images/sprite.png);
+  background-position: -78px -177px;
+  width: 31px;
+  height: 24px;
+}
+.icon-s6-img-amd-10 {
+  background-image: url(../images/sprite.png);
+  background-position: -109px -177px;
+  width: 31px;
+  height: 24px;
+}
+.icon-s6-img-amd-11 {
+  background-image: url(../images/sprite.png);
+  background-position: 0px -204px;
+  width: 31px;
+  height: 24px;
+}
+.icon-s6-img-amd-12 {
+  background-image: url(../images/sprite.png);
+  background-position: -202px -177px;
+  width: 31px;
+  height: 24px;
+}
+.icon-s6-img-amd-13 {
+  background-image: url(../images/sprite.png);
+  background-position: -140px -177px;
+  width: 31px;
+  height: 24px;
+}
+.icon-s6-img-amd-2 {
+  background-image: url(../images/sprite.png);
+  background-position: -171px -177px;
+  width: 31px;
+  height: 24px;
+}
+.icon-s6-img-amd-3 {
+  background-image: url(../images/sprite.png);
+  background-position: -216px 0px;
+  width: 35px;
+  height: 40px;
+}
+.icon-s6-img-amd-4 {
+  background-image: url(../images/sprite.png);
+  background-position: -114px -116px;
+  width: 44px;
+  height: 36px;
+}
+.icon-s6-img-amd-5 {
+  background-image: url(../images/sprite.png);
+  background-position: 0px -177px;
+  width: 41px;
+  height: 27px;
+}
+.icon-s6-img-amd-6 {
+  background-image: url(../images/sprite.png);
+  background-position: -216px -149px;
+  width: 31px;
+  height: 27px;
+}
+.icon-s6-img-amd-7 {
+  background-image: url(../images/sprite.png);
+  background-position: -216px -40px;
+  width: 30px;
+  height: 40px;
+}
+.icon-s6-img-amd-72 {
+  background-image: url(../images/sprite.png);
+  background-position: -41px -177px;
+  width: 37px;
+  height: 26px;
+}
+.icon-s6-img-amd-8 {
+  background-image: url(../images/sprite.png);
+  background-position: -216px -118px;
+  width: 31px;
+  height: 31px;
+}
+.icon-s6-img-amd-9 {
+  background-image: url(../images/sprite.png);
+  background-position: -158px -116px;
+  width: 50px;
+  height: 28px;
+}
+.icon-s8-icn1 {
+  background-image: url(../images/sprite.png);
+  background-position: -157px 0px;
+  width: 59px;
+  height: 52px;
+}
+.icon-s8-icn2 {
+  background-image: url(../images/sprite.png);
+  background-position: 0px -116px;
+  width: 38px;
+  height: 61px;
+}
+.icon-s8-icn3 {
+  background-image: url(../images/sprite.png);
+  background-position: -157px -52px;
+  width: 43px;
+  height: 58px;
 }

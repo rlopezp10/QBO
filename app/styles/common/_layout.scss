@@ -368,7 +368,7 @@ nav {
     height: initial;
 
     .title-special {
-      padding: 90px 0 0;
+      padding: 90px 0 20px;
       border-color: $brand-secondary;
       margin-bottom: 20px;
       width: 100%;
@@ -489,7 +489,7 @@ nav {
 
 .section__5 {
   .bg-general {
-    background-image: url(/images/global/slide4/s5-bg-no-blur.jpg);
+    background-image: url(/images/global/slide5/s6-bg-no-blur.jpg);
   }
 
 
@@ -503,13 +503,13 @@ nav {
     height: initial;
 
     .title-special {
-      padding: 90px 0 0;
-      border-color: $brand-secondary;
+      padding: 90px 0 20px;
       margin-bottom: 20px;
       width: 100%;
       max-width: 530px;
     }
   }
+
 
   .container-list-imgs {
     list-style: none;
@@ -548,10 +548,19 @@ nav {
               background-color: rgba(0, 35, 61, 0.5);
             }
 
-            .copy {
+            .copy, .icon, .sub-copy {
               opacity: 1;
             }
+
           }
+        }
+
+        .icon {
+          position: absolute;
+          top: 10px;
+          left: 10px;
+          opacity: 0;
+          z-index: 1;
         }
 
         .image-link {
@@ -563,25 +572,31 @@ nav {
           z-index: 1;
         }
 
-        .video-link {
-          position: absolute;
-          top: 0;
-          right: 0;
-          padding: 11px 9px;
-          background-color: rgba(17, 38, 82, 0.5);
-          z-index: 2;
-        }
-
         .copy {
           position: absolute;
-          bottom: 6px;
-          left: 10px;
+          top: 10px;
+          left: 50px;
           color: $general-primary;
-          font-size: 22px;
-          font-weight: 200;
-          line-height: 22px;
+          font-size: 15px;
+          font-weight: 400;
           text-align: left;
           font-style: italic;
+          line-height: 14px;
+          z-index: 1;
+          opacity: 0;
+          @include transition(opacity .5s ease);
+        }
+
+        .sub-copy {
+          position: absolute;
+          top: 45px;
+          left: 10px;
+          color: $general-primary;
+          font-size: 12px;
+          font-weight: 400;
+          text-align: left;
+          font-style: italic;
+          line-height: 13px;
           z-index: 1;
           opacity: 0;
           @include transition(opacity .5s ease);
@@ -599,6 +614,65 @@ nav {
     }
   }
 }
+
+.section__6 {
+  .bg-general {
+    background-image: url(/images/global/slide6/s7-bg-no-blur.jpg);
+  }
+
+
+  .container-sec {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto;
+    position: relative;
+    top: 50%;
+    @include translate(0, -50%);
+    height: initial;
+
+    .title-special {
+      padding: 90px 0 20px;
+      margin-bottom: 20px;
+      width: 100%;
+      max-width: 530px;
+    }
+
+    .h-solis-link {    
+      i {
+        @extend .icon-hsolis;
+      }
+
+      &:hover {
+        i {
+          @extend .icon-hsolis-hover;
+        }
+      }
+    }
+
+    .container-desarrollador {
+      list-style: none;
+      padding: 0;
+
+      li {
+        display: inline-block;
+        width: 31%;
+        padding: 0 2%;
+
+        p {
+          padding: 25px 0;
+
+        }
+        @media(max-width: $screen-xs-max) {
+          width: 96%;
+        }
+      }
+    }
+  }
+
+
+}
+
+
 
 
 
