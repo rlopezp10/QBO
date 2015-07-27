@@ -445,10 +445,23 @@ nav {
     }
   }
 
+  .img-render-container {
+    position: relative;
+    width: 400px;
+    height: 320px;
+    margin: 0 auto;
 
-  .img-render- {
-    width: 100%;
-    max-width: 700px;
+    .img-render {
+      width: 100%;
+      position: absolute;
+      left: 0;
+      right: 0;
+      
+
+      &.hi {
+        opacity: 0;
+      }
+    }
   }
 
 
