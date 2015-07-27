@@ -197,6 +197,27 @@ nav {
   }
 }
 
+.section__0, .section__1, .section__2, .section__3, .section__4, .section__5, .section__6 {
+  > .bg-general {
+    @include blur(10px);
+  }
+
+  > .container-fluid {
+    @media(max-width: $screen-xs-max) {
+      padding-top: em(100px);
+      padding-bottom: em(100px);
+    }
+
+    .container-sec {
+      .title-special {
+        @media(max-width: $screen-xs-max) {
+          padding-top: 0;
+        }
+      }
+    }
+  }
+}
+
 .section__0 {
   z-index: 10;
 
@@ -214,6 +235,10 @@ nav {
       // margin-left: em(480px);
       float: none;
       margin: 0 auto;
+    }
+
+    .title-special {
+      margin-top: 40px;
     }
 
     img {
@@ -245,6 +270,12 @@ nav {
       bottom: initial;
       top: 0;
     }
+
+    @media(max-width: $screen-xs-max) {
+      position: fixed;
+      bottom: initial;
+      top: 0;
+    }
   }
 }
 
@@ -259,8 +290,10 @@ nav {
     max-width: 700px;
     margin: 0 auto;
     position: relative;
-    top: 50%;
-    @include translate(0, -50%);
+    @media(min-width: $screen-xs-max) {
+      top: 50%;
+      @include translate(0, -50%);
+    }
     height: initial;
 
     .title-special {
@@ -283,8 +316,12 @@ nav {
     max-width: 700px;
     margin: 0 auto;
     position: relative;
-    top: 50%;
-    @include translate(0, -50%);
+
+    @media(min-width: $screen-xs-max) {
+      top: 50%;
+      @include translate(0, -50%);
+    }
+
     height: initial;
 
     .title-special {
@@ -308,8 +345,11 @@ nav {
     max-width: 700px;
     margin: 0 auto;
     position: relative;
-    top: 50%;
-    @include translate(0, -50%);
+
+    @media(min-width: $screen-xs-max) {
+      top: 50%;
+      @include translate(0, -50%);
+    }
     height: initial;
 
     .title-special {
@@ -363,8 +403,10 @@ nav {
     max-width: 700px;
     margin: 0 auto;
     position: relative;
-    top: 50%;
-    @include translate(0, -50%);
+    @media(min-width: $screen-xs-max) {
+      top: 50%;
+      @include translate(0, -50%);
+    }
     height: initial;
 
     .title-special {
@@ -378,6 +420,15 @@ nav {
 
   .tabs {
     margin: 15px 0 20px 0;
+    list-style: none;
+
+    li {
+      display: inline-block;
+
+      &:first-child {
+        border-right: 1px solid;
+      }
+    }
 
     a {
       font-size: em(30px);
@@ -386,14 +437,38 @@ nav {
       text-transform: uppercase;
       font-weight: 200;
       display: inline-block;
-      padding: 0 em(10px, 30px) 0 em(7px, 30px);  
-
-      &:first-child {
-        border-right: 1px solid;
-      }
+      padding: 0 em(10px, 30px) 0 em(7px, 30px);     
 
       @media(max-width: $screen-xs-max) {
         font-size: em(20px);
+      }
+    }
+  }
+
+
+  .img-render- {
+    width: 100%;
+    max-width: 700px;
+  }
+
+
+  .img-render-container-list {
+    padding: 0;
+    list-style: none;
+
+    li {
+      display: inline-block;
+      border-left: 1px solid $general-primary;
+
+      &:first-child {
+        border: none;
+      }
+
+      a {
+        color: $general-primary;
+        font-style: normal;
+        font-size: 14px;
+        padding: 0 10px;
       }
     }
   }
@@ -410,6 +485,10 @@ nav {
 
       @media(max-width: $screen-xs-max) {
         width: 49%;
+      }
+
+      @media(max-width: $screen-sm-mobile) {
+        width: 99%;
       }
 
       > div {
@@ -498,8 +577,10 @@ nav {
     max-width: 700px;
     margin: 0 auto;
     position: relative;
-    top: 50%;
-    @include translate(0, -50%);
+    @media(min-width: $screen-xs-max) {
+      top: 50%;
+      @include translate(0, -50%);
+    }
     height: initial;
 
     .title-special {
@@ -523,6 +604,10 @@ nav {
 
       @media(max-width: $screen-xs-max) {
         width: 49%;
+      }
+
+      @media(max-width: $screen-sm-mobile) {
+        width: 99%;
       }
 
       > div {
@@ -626,18 +711,23 @@ nav {
     max-width: 700px;
     margin: 0 auto;
     position: relative;
-    top: 50%;
-    @include translate(0, -50%);
+    @media(min-width: $screen-xs-max) {
+      top: 50%;
+      @include translate(0, -50%);
+    }
     height: initial;
 
     .title-special {
-      padding: 90px 0 20px;
-      margin-bottom: 20px;
+      padding: em(90px) 0 em(20px);
+      margin-bottom: em(20px);
       width: 100%;
-      max-width: 530px;
+      max-width: em(530px);
     }
 
-    .h-solis-link {    
+    .h-solis-link {
+      border-top: 1px solid $general-primary;
+      padding: em(30px) em(50px) 0;    
+
       i {
         @extend .icon-hsolis;
       }
@@ -659,7 +749,7 @@ nav {
         padding: 0 2%;
 
         p {
-          padding: 25px 0;
+          padding: em(25px) 0;
 
         }
         @media(max-width: $screen-xs-max) {

@@ -15,6 +15,16 @@ $(function() {
     return r;
   }
 
+  function isBigger() {
+    var r = false;
+
+    if ($w.width() > 767) {
+      r = true;
+    }
+
+    return r;
+  }
+
   function initPlugIn() {
     var s = null;
 
@@ -55,10 +65,24 @@ $(function() {
   }
 
   isMobile = isMo();
-  if (!isMobile) {
+  if (!isMobile && isBigger()) {
     var s = initPlugIn();
     initSiteParams();
   }
+
+  $('#myTabs a').click(function (e) {
+    e.preventDefault()
+    $(this).tab('show')
+  });
+
+
+  $('.img-render-container-list a').on('click', function(e) {
+    e.preventDefault();
+    var dir = '/images/global/slide4/distri/';
+    var t = $(this).attr('data-value');
+
+    $('.img-render-').attr('src', dir + t);
+  });
 
   $('#map-modal-id').on('show.bs.modal', function (event) {
     $('.section__1').find('.container-fluid').hide();
