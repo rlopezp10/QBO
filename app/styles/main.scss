@@ -24,3 +24,199 @@ $icon-font-path: '../fonts/';
   vertical-align: middle;
 }
 
+
+
+
+.s9Col1{
+    width: 60%;
+
+    @media(max-width: $screen-xs-max) {
+    	width: 100%;
+    }
+    height: 200px;
+    float: left;
+    margin-right: 5%;
+    text-align: left;
+}
+
+.s9Col1 form{
+    margin-top: 10px;
+    float: left;
+}
+.s9Col1 p, .s9Col1 label, .s9Col1 input{
+    font-weight: 200;
+
+}
+
+.s9Col1 p{margin-bottom: 20px; font-size: 12px;}
+
+.s9Col1 form{width: 100%; text-align: center;}
+.s9Col1 form{
+    width: 100%;
+    margin-bottom: 30px;
+    float: left;
+}
+.s9Col1 form label{
+    width: 18%;
+    display: block;
+    float: left;
+    margin: 0px; padding: 0px;
+    text-align: left !important; 
+    color: #fff;
+}
+
+.s9Col1 form label:nth-child(10){
+    width: 100%;
+}
+
+.s9Col1 form input{
+    width: 80%;
+    padding: 0px;
+    padding: 0px 0px;
+    background: none;
+    border-top:none;
+    border-left:none;
+    border-right:none;
+    border-bottom:1px solid #fff;
+    color: #fff !important;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 200;
+    text-align: center;
+    margin-bottom: 20px;
+
+}
+
+textarea:focus, input:focus{
+    outline: 0;
+}
+
+.s9Col1 form select{
+    width: 98%;
+    padding: 0px;
+    padding: 0px 0px;
+    background: none;
+    border:1px solid #fff;
+    border-radius:none;
+    color: #fff;
+    font-size: 14px;    
+    float: left;
+    display: block;
+    line-height: 20px;
+    font-weight: 200;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.labelFooter label{
+    float: left;
+    width: 100% !important;
+}
+
+.s9Col1 form button{
+    width: 200px;
+    display: block;
+    height: 50px;
+    background: #fff;
+    color: #1a3f92;
+    text-align: center;
+    border:none;
+    font-weight: 200;
+    font-size: 21px;
+    margin: 0 auto;
+}
+
+.s9Col1 form button:hover{
+background: #f0f9ff; /* Old browsers */
+background: -moz-radial-gradient(center, ellipse cover,  #f0f9ff 56%, #e2e9ff 100%); /* FF3.6+ */
+background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(56%,#f0f9ff), color-stop(100%,#e2e9ff)); /* Chrome,Safari4+ */
+background: -webkit-radial-gradient(center, ellipse cover,  #f0f9ff 56%,#e2e9ff 100%); /* Chrome10+,Safari5.1+ */
+background: -o-radial-gradient(center, ellipse cover,  #f0f9ff 56%,#e2e9ff 100%); /* Opera 12+ */
+background: -ms-radial-gradient(center, ellipse cover,  #f0f9ff 56%,#e2e9ff 100%); /* IE10+ */
+background: radial-gradient(ellipse at center,  #f0f9ff 56%,#e2e9ff 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f0f9ff', endColorstr='#e2e9ff',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+}
+
+
+.s9Col1 form textarea{
+    width: 97%;
+    padding: 0px;
+    padding: 0px 0px;
+    background: none;
+    border:1px solid #fff;
+    border-radius:none;
+    color: #fff;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 200;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    float: left;
+}
+
+.s9Col1 .parsley-custom-error-message{float: right !important;}
+
+
+
+.side-bar {
+	position: absolute;
+  top: 70px;
+  right: 50px;
+
+
+  @media(max-width: $screen-xs-max) {
+  	display: none;
+  }
+
+  h3 {
+    font-size: 20px;
+    color: $general-primary;
+    margin: 35px 0;
+  }
+
+  a {
+  	font-size: 13px;
+  	color: $general-primary;
+  	display: block;
+  	margin-bottom: 14px;
+  }
+}
+
+
+.mail-caller {
+    position: fixed;
+    top: 50%;
+    margin-top: -30px;
+    background-color: rgba(255, 255, 255, 0.5);
+    right: 0;
+    padding: 20px;
+    z-index: 1111;
+
+    @media (max-width: $screen-xs-max) {
+        display: none;
+    }
+}
+
+
+#quick-contact-id {
+    .modal-body {
+        background-color: white;
+        color: $general-secondary;
+
+        img {
+            max-width: 200px;
+        }
+
+
+        label {
+            text-transform: uppercase;
+        }
+    }
+}
+
+
+
+

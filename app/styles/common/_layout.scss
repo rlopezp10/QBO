@@ -126,6 +126,7 @@ nav {
       .modal-header {
         min-height: initial;
         border: none;
+        padding-bottom: 30px;
 
         .close {
           color: $general-primary;
@@ -199,7 +200,7 @@ nav {
 
 .section__0, .section__1, .section__2, .section__3, .section__4, .section__5, .section__6 {
   > .bg-general {
-    @include blur(10px);
+    // @include blur(10px);
   }
 
   > .container-fluid {
@@ -785,6 +786,42 @@ nav {
 
 
 
+.section__7 {
+  .bg-general {
+    background-image: url(/images/global/slide7/s9-bg-blur.jpg);
+  }
+
+
+  .container-sec {
+    text-align: left;
+    max-width: 700px;
+    margin: 0 auto;
+    position: relative;
+    height: initial;
+
+    .title-special {
+      padding: em(90px) 0 em(20px);
+      width: 100%;
+      max-width: em(200px);
+      border: none;
+    }
+
+
+  }
+}
+
+
+.footer {
+  text-align: center;
+
+  i {
+    margin: 0 auto;
+  }
+
+  p {
+    font-size: 10px;
+  }
+}
 
 
 

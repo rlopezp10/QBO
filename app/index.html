@@ -39,6 +39,49 @@
       </div>
     </section> -->
 
+    <div class="modal fade" id="quick-contact-id" tabindex="-1" role="dialog" aria-labelledby="quick-contact-idLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-custom">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          </div>
+          <div class="modal-body">
+            <h3><img src="/images/global/hdr-popCont.png"></h3>
+            <form>
+              <div class="form-group">
+                <label for="exampleInputEmail1">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+              </div>
+              <div class="form-group">
+                <label for="exampleInputPassword1">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+              </div>
+              <div class="form-group">
+                <label for="exampleInputPassword1">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+              </div>
+
+              <div class="form-group">
+                <label>Background Color</label>
+                <select class="form-control">
+                  <option value="">Please select</option>
+                  <option value="E33D45">RED</option>
+                  <option value="1e3746">BLUE</option>
+                  <option value="ffca17">YELLOW</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label>General Info</label>
+                <textarea class="form-control" placeholder="General Information"> </textarea>
+              </div>
+
+              <button type="submit" class="btn btn-default">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- Modal -->
     <div class="modal fade" id="map-modal-id" tabindex="-1" role="dialog" aria-labelledby="map-modal-idLabel">
       <div class="modal-dialog" role="document">
@@ -875,6 +918,9 @@
 
     <!--  body -->
     <main id="skrollr-body">
+      <a href="#" class="mail-caller" data-toggle="modal" data-target="#quick-contact-id">
+        <i class="icon icon-nav-icn-mensaje">mail</i>
+      </a>
       <section id="segment-1" class="main-section section section__0">
         <div class="bg-general"></div>
         <div class="container-fluid">
@@ -1456,6 +1502,81 @@
           </div>
         </div>
       </section>
+
+      <section id="segment-8" class="main-section section section__7" >
+        <div class="bg-general" ></div>
+        <div class="container-fluid" >
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="container-sec s9Col1">
+                <img class="title-special" src="/images/global/slide7/s9-hdr-form.png">
+
+                <p>Si deseas recibir información del proyecto, completa el formulario y te estaremos enviando la información lo más pronto posible.</p>
+
+                <form action="inscripcion.php"  method="post" id="sub_form2" name="emailForm" data-parsley-validate="true">
+                  <label for="nombre">NOMBRE:</label>
+                  <input id="txtNombre" type="text" name="nombre" data-parsley-required="true" data-parsley-group="block1" data-parsley-error-message="*" data-parsley-range="[3, 80]" maxlength="80" placeholder="Nombre" >
+
+                  <label for="email">E-MAIL:</label>
+                  <input id="txtEmail" type="email" name="email" data-parsley-required="true" data-parsley-group="block1" data-parsley-type="email" data-parsley-range="[8,150]" data-parsley-error-message="*" maxlength="150" placeholder="ejemplo@correo.com"/>
+
+                  <label for="tel">TEL&eacute;FONO:</label>
+                  <input id="txtTelfono" type="text" name="tel" data-parsley-required="true" data-parsley-group="block1" data-parsley-type="number" data-parsley-minlength="8" data-parsley-maxlength="9" data-parsley-error-message="*" maxlength="9" placeholder="Ingrese su n&uacute;mero telef&oacute;nico"/>
+
+                  <div class="labelFooter">
+                    <label for="medio">&#191;C&Oacute;MO NOS CONOCI&Oacute;?</label>
+                    <select class="place_holder dropdown" id="txtMedio" name="medio" data-parsley-required="true" data-parsley-group="block1" data-parsley-error-message="*" >
+                      <option value="" disabled selected style="display:none">Seleccione una opci&oacute;n</option>
+                      <option value="Revista">Revista</option>
+                      <option value="Valla">Valla</option>
+                      <option value="Facebook">Facebook</option>
+                      <option value="Internet">Internet</option>
+                      <option value="Actividad">Actividad</option>
+                      <option>Otro</option>
+                    </select>
+
+                    <label for="mensaje">MENSAJE:</label>
+                    <textarea name="mensaje" type="text" data-parsley-required="true" data-parsley-error-message="* campos requeridos" placeholder="Ingrese el mensaje aqu&iacute;"></textarea>
+
+                  </div>
+                  <button type="submit" value="Enviar" >Enviar</button>
+                  <div class="disclaimer">
+                    <p>* Para contactar a una de nuestros ejecutivos de venta llamar a <span>+506 6048-5000</span>.</p>
+                  </div>
+
+                </form>
+
+
+                <div class="footer">
+                  <i class="icon icon-s9-icn-qbo">sadsa</i>
+                  <p>Copyright © 2015 Constructora Hernás Solís Todos los derechos reservados.</p>
+                </div>
+
+              </div>
+
+              <div class="side-bar">
+                  <h3>SEGUINOS EN:</h3>
+                  <a href="https://www.facebook.com/qborohrmoser">
+                    <i class="icon icon-s9-icn-fb">sss</i>/qborohrmoser
+                  </a>
+                  <a href="https://www.facebook.com/hsolisinmobiliaria">
+                    <i class="icon icon-s9-icn-fb">sss</i>/hsolisinmobiliaria
+                  </a>
+
+                  <h3>LLAMANOS AL:</h3>
+                  <a>
+                    <i class="icon icon-s9-icn-tel">sss</i>(+506) 4000-1125
+                  </a>
+                  <a>
+                    <i class="icon icon-s9-icn-cel">sss</i>(+506) 6055-1177
+                  </a>
+                </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
 
     </main>
 

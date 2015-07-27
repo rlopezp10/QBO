@@ -21,21 +21,27 @@ Icon classes can be used entirely standalone. They are named after their origina
   width: 157px;
   height: 58px;
 }
-.icon-next_special {
+.icon-nav-icn-mensaje {
   background-image: url(../images/sprite.png);
-  background-position: -200px -52px;
-  width: 16px;
-  height: 16px;
+  background-position: -216px -166px;
+  width: 30px;
+  height: 18px;
 }
-.icon-previous_special {
+.icon-next_special {
   background-image: url(../images/sprite.png);
   background-position: -200px -68px;
   width: 16px;
   height: 16px;
 }
+.icon-previous_special {
+  background-image: url(../images/sprite.png);
+  background-position: -200px -52px;
+  width: 16px;
+  height: 16px;
+}
 .icon-s2-icn-geoLocation {
   background-image: url(../images/sprite.png);
-  background-position: -216px -80px;
+  background-position: -114px -116px;
   width: 29px;
   height: 38px;
 }
@@ -53,7 +59,7 @@ Icon classes can be used entirely standalone. They are named after their origina
 }
 .icon-s4-icn-corazon {
   background-image: url(../images/sprite.png);
-  background-position: -31px -204px;
+  background-position: -216px -144px;
   width: 25px;
   height: 22px;
 }
@@ -65,87 +71,87 @@ Icon classes can be used entirely standalone. They are named after their origina
 }
 .icon-s6-img-amd-1 {
   background-image: url(../images/sprite.png);
-  background-position: -78px -177px;
+  background-position: -180px -116px;
   width: 31px;
   height: 24px;
 }
 .icon-s6-img-amd-10 {
   background-image: url(../images/sprite.png);
-  background-position: -109px -177px;
+  background-position: -28px -177px;
   width: 31px;
   height: 24px;
 }
 .icon-s6-img-amd-11 {
   background-image: url(../images/sprite.png);
-  background-position: 0px -204px;
+  background-position: -59px -177px;
   width: 31px;
   height: 24px;
 }
 .icon-s6-img-amd-12 {
   background-image: url(../images/sprite.png);
-  background-position: -202px -177px;
+  background-position: -90px -177px;
   width: 31px;
   height: 24px;
 }
 .icon-s6-img-amd-13 {
   background-image: url(../images/sprite.png);
-  background-position: -140px -177px;
+  background-position: -121px -177px;
   width: 31px;
   height: 24px;
 }
 .icon-s6-img-amd-2 {
   background-image: url(../images/sprite.png);
-  background-position: -171px -177px;
+  background-position: -152px -177px;
   width: 31px;
   height: 24px;
 }
 .icon-s6-img-amd-3 {
   background-image: url(../images/sprite.png);
-  background-position: -216px 0px;
-  width: 35px;
-  height: 40px;
+  background-position: -183px -177px;
+  width: 31px;
+  height: 24px;
 }
 .icon-s6-img-amd-4 {
   background-image: url(../images/sprite.png);
-  background-position: -114px -116px;
-  width: 44px;
-  height: 36px;
+  background-position: -216px 0px;
+  width: 31px;
+  height: 24px;
 }
 .icon-s6-img-amd-5 {
   background-image: url(../images/sprite.png);
-  background-position: 0px -177px;
-  width: 41px;
-  height: 27px;
+  background-position: -216px -24px;
+  width: 31px;
+  height: 24px;
 }
 .icon-s6-img-amd-6 {
   background-image: url(../images/sprite.png);
-  background-position: -216px -149px;
+  background-position: -216px -48px;
   width: 31px;
-  height: 27px;
+  height: 24px;
 }
 .icon-s6-img-amd-7 {
   background-image: url(../images/sprite.png);
-  background-position: -216px -40px;
-  width: 30px;
-  height: 40px;
+  background-position: -216px -72px;
+  width: 31px;
+  height: 24px;
 }
 .icon-s6-img-amd-72 {
   background-image: url(../images/sprite.png);
-  background-position: -41px -177px;
+  background-position: -143px -116px;
   width: 37px;
   height: 26px;
 }
 .icon-s6-img-amd-8 {
   background-image: url(../images/sprite.png);
-  background-position: -216px -118px;
+  background-position: -216px -120px;
   width: 31px;
-  height: 31px;
+  height: 24px;
 }
 .icon-s6-img-amd-9 {
   background-image: url(../images/sprite.png);
-  background-position: -158px -116px;
-  width: 50px;
-  height: 28px;
+  background-position: -216px -96px;
+  width: 31px;
+  height: 24px;
 }
 .icon-s8-icn1 {
   background-image: url(../images/sprite.png);
@@ -164,4 +170,28 @@ Icon classes can be used entirely standalone. They are named after their origina
   background-position: -157px -52px;
   width: 43px;
   height: 58px;
+}
+.icon-s9-icn-cel {
+  background-image: url(../images/sprite.png);
+  background-position: -216px -184px;
+  width: 23px;
+  height: 22px;
+}
+.icon-s9-icn-fb {
+  background-image: url(../images/sprite.png);
+  background-position: 0px -208px;
+  width: 23px;
+  height: 22px;
+}
+.icon-s9-icn-qbo {
+  background-image: url(../images/sprite.png);
+  background-position: 0px -177px;
+  width: 28px;
+  height: 31px;
+}
+.icon-s9-icn-tel {
+  background-image: url(../images/sprite.png);
+  background-position: -23px -208px;
+  width: 23px;
+  height: 22px;
 }
