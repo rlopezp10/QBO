@@ -13,7 +13,11 @@ $(function() {
     var g = $(this).attr('data-link');
 
     if (g) {
-      $("html, body").animate({ scrollTop: ($('#' + g).offset().top + 200) }, 1000);
+      var goTo = $('#' + g).offset().top;
+      if (!isMobile && isBigger()) {
+        goTo +=  200;
+      }
+      $("html, body").animate({ scrollTop: (goTo) }, 1000);
     } else {
       console.log('not define');
     }
