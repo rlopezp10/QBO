@@ -38,8 +38,10 @@ $(function() {
 
   function isMo() {
     var r = false;
-    if ((/Android|iPhone|iPad|iPod|BlackBerry/i).test(navigator.userAgent || navigator.vendor || window.opera))
+    if ((/Android|iPhone|iPad|iPod|BlackBerry/i).test(navigator.userAgent || navigator.vendor || window.opera)) {
       r = true;
+      $('body').addClass('mobile');
+    }
     return r;
   }
 

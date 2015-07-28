@@ -221,6 +221,43 @@ nav {
   }
 }
 
+body.mobile {
+  .menu {
+    position: fixed;
+    bottom: initial;
+    top: 0;
+  }
+
+  .section__0, .section__1, .section__2, .section__3, .section__4, .section__5, .section__6 {
+    > .container-fluid {
+      padding-top: em(100px);
+      padding-bottom: em(100px);
+    }
+    
+    .container-sec {
+        top: 0;
+      @include translate(0, 0);
+    }
+    .bg-general {
+      background-attachment: initial;
+    }
+  }
+
+  .section__1, .section__2, .section__3, .section__4, .section__5, .section__6 {
+    .bg-general {
+      @include blur(10px);
+    }
+  }
+}
+
+.section__1, .section__2, .section__3, .section__4, .section__5, .section__6 {
+  .bg-general {
+    @media(max-width: $screen-xs-max) {
+      @include blur(10px);
+    }
+  }
+}
+
 .section__0 {
   z-index: 10;
 
@@ -286,7 +323,6 @@ nav {
   .bg-general {
     background-image: url(/images/global/slide1/s2-bg-no-blur.jpg);
   }
-
 
   .container-sec {
     text-align: center;
@@ -424,6 +460,7 @@ nav {
   .tabs {
     margin: 15px 0 20px 0;
     list-style: none;
+    padding: 0;
 
     li {
       display: inline-block;
@@ -443,7 +480,7 @@ nav {
       padding: 0 em(10px, 30px) 0 em(7px, 30px);     
 
       @media(max-width: $screen-xs-max) {
-        font-size: em(20px);
+        font-size: em(18px);
       }
     }
   }
@@ -520,6 +557,7 @@ nav {
         &.gallery-link {
           position: relative;
           display: inline-block;
+          width: 100%;
 
           &:after {
             content: ' ';
@@ -584,6 +622,16 @@ nav {
           //   width: 60%;
           // }
         }
+
+
+        span.bgas {
+          width: 100%;
+          height: 120px;
+          display: inline-block;
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: center;
+        }
       }
     }
   }
@@ -639,6 +687,7 @@ nav {
         &.gallery-link {
           position: relative;
           display: inline-block;
+          width: 100%;
 
           &:after {
             content: ' ';
@@ -718,6 +767,15 @@ nav {
           // @media(max-width: $screen-mobile) {
           //   width: 60%;
           // }
+        }
+
+        span.bgas {
+          width: 100%;
+          height: 120px;
+          display: inline-block;
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: center;
         }
       }
     }
