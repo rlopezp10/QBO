@@ -55,7 +55,7 @@ nav {
 
           @media(max-width: $screen-xs-max) {
             font-size: em(15px);
-            padding: em(10px, 15px) em(6px, 15px);
+            padding: em(4px, 15px) em(3px, 15px);
           }
         }
       }
@@ -222,6 +222,25 @@ nav {
 }
 
 body.mobile {
+
+  .modal.fade {
+    .modal-dialog {
+      .modal-custom {
+        background-color: #000000;
+      }
+    }
+  }
+
+  .gallery-link {
+    &:after {
+      background-color: rgba(0, 35, 61, 0.5);
+    }
+
+    .copy, .sub-copy, .icon {
+      opacity: 1 !important;
+    }
+  }
+
   .menu {
     position: fixed;
     bottom: initial;
